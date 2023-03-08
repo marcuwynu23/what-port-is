@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "what-port-is"
+version = "0.1.0"
+description = ""
+authors = ["Mark Wayne Buncaras Menorca <marcuwynu23@gmail.com>"]
+readme = "README.md"
+packages = [{include = "what_port_is"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.2"
+beautifulsoup4 = "^4.11.2"
+tabulate = "^0.9.0"
+fire = "^0.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

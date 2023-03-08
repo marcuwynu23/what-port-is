@@ -1,8 +1,9 @@
 import fire
-from script.portInfo import getPortInfo 
+from script.wport import wport
+
 def portChecker(port):
     '''try main.py --port <what port> to know what port is?'''
-    port,description = getPortInfo(port,"https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers")
+    wport("Searching port Information...",port)
     print(f'''
     Port: {port}
     description: {description}
